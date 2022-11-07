@@ -1,0 +1,650 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Images/pixel_wall_2.png" type="Texture" id=2]
+[ext_resource path="res://Images/donegwall.JPG" type="Texture" id=3]
+[ext_resource path="res://Images/pixel_wall_2_flipped.png" type="Texture" id=4]
+[ext_resource path="res://Images/pixel_wall_1.png" type="Texture" id=5]
+[ext_resource path="res://Mana.tscn" type="PackedScene" id=6]
+[ext_resource path="res://staff_exit.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemy/Goblin.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Game Over.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Victory Menu.tscn" type="PackedScene" id=10]
+
+[node name="Level2" type="Node2D"]
+position = Vector2( 0, 24 )
+
+[node name="Donegwall" type="Sprite" parent="."]
+position = Vector2( 227, 122 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+offset = Vector2( 930, 1100 )
+region_enabled = true
+region_rect = Rect2( -4784, -4037, 8099, 6806 )
+
+[node name="Donegwall2" type="Sprite" parent="."]
+position = Vector2( 227, 122 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+offset = Vector2( 930, 1100 )
+region_enabled = true
+region_rect = Rect2( -4784, -4037, 8099, 6806 )
+
+[node name="Donegwall3" type="Sprite" parent="."]
+position = Vector2( 227, 122 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+offset = Vector2( 930, 1100 )
+region_enabled = true
+region_rect = Rect2( -4784, -4037, 8099, 6806 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -744.0
+margin_top = -80.0
+margin_right = 24.0
+margin_bottom = 328.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = -272.0
+margin_top = 304.0
+margin_right = 808.0
+margin_bottom = 704.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 624.0
+margin_top = -64.0
+margin_right = 1704.0
+margin_bottom = 336.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+margin_left = -688.0
+margin_top = -368.0
+margin_right = 392.0
+margin_bottom = 32.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+margin_left = 88.0
+margin_top = -856.0
+margin_right = 152.0
+margin_bottom = 56.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+margin_left = 136.0
+margin_top = -840.0
+margin_right = 384.0
+margin_bottom = 88.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect8" type="ColorRect" parent="."]
+margin_left = 360.0
+margin_top = -920.0
+margin_right = 680.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+margin_left = 136.0
+margin_top = 64.0
+margin_right = 416.0
+margin_bottom = 152.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="PixelWall20" type="Sprite" parent="."]
+position = Vector2( 151, 203 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall2Flipped3" type="Sprite" parent="."]
+position = Vector2( 419.337, 126 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2" type="Sprite" parent="."]
+position = Vector2( 312, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall3" type="Sprite" parent="."]
+position = Vector2( 298, 211.581 )
+rotation = 1.5708
+scale = Vector2( 0.358878, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall9" type="Sprite" parent="."]
+position = Vector2( 351, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall10" type="Sprite" parent="."]
+position = Vector2( 387, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall4" type="Sprite" parent="."]
+position = Vector2( 310, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall15" type="Sprite" parent="."]
+position = Vector2( 335, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall6" type="Sprite" parent="."]
+position = Vector2( 360, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall7" type="Sprite" parent="."]
+position = Vector2( 404, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall8" type="Sprite" parent="."]
+position = Vector2( 489, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall14" type="Sprite" parent="."]
+position = Vector2( 555, 177 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall28" type="Sprite" parent="."]
+position = Vector2( 555, 177 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall33" type="Sprite" parent="."]
+position = Vector2( 555, 114 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall42" type="Sprite" parent="."]
+position = Vector2( 555, 92 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall60" type="Sprite" parent="."]
+position = Vector2( 625.126, 172.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall61" type="Sprite" parent="."]
+position = Vector2( 625.126, 109.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall62" type="Sprite" parent="."]
+position = Vector2( 625.126, 87.3818 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall66" type="Sprite" parent="."]
+position = Vector2( 625.126, 261.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall67" type="Sprite" parent="."]
+position = Vector2( 625.126, 230.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall79" type="Sprite" parent="."]
+position = Vector2( 24.1259, 187.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall81" type="Sprite" parent="."]
+position = Vector2( 24.1259, 267.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall82" type="Sprite" parent="."]
+position = Vector2( 24.1259, 245.382 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall68" type="Sprite" parent="."]
+position = Vector2( 479.382, 297.251 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall69" type="Sprite" parent="."]
+position = Vector2( 535, 297.126 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall70" type="Sprite" parent="."]
+position = Vector2( 599, 297.126 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall30" type="Sprite" parent="."]
+position = Vector2( 24, 183.125 )
+rotation = 1.5708
+scale = Vector2( 0.711484, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall31" type="Sprite" parent="."]
+position = Vector2( 25, 120 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall11" type="Sprite" parent="."]
+position = Vector2( 489, 200 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall5" type="Sprite" parent="."]
+position = Vector2( 269, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall59" type="Sprite" parent="."]
+position = Vector2( 507, 295 )
+scale = Vector2( 0.45, 0.389535 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall58" type="Sprite" parent="."]
+position = Vector2( 476, 295 )
+scale = Vector2( 0.45, 0.389535 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall57" type="Sprite" parent="."]
+position = Vector2( 432, 294 )
+scale = Vector2( 0.45, 0.389535 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall56" type="Sprite" parent="."]
+position = Vector2( 433, 298.126 )
+scale = Vector2( 0.45, 0.389535 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall71" type="Sprite" parent="."]
+position = Vector2( 278.207, 298.377 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall72" type="Sprite" parent="."]
+position = Vector2( 333.825, 298.251 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall73" type="Sprite" parent="."]
+position = Vector2( 392, 296 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall74" type="Sprite" parent="."]
+position = Vector2( 231.825, 299.251 )
+scale = Vector2( 0.45, 0.389535 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall75" type="Sprite" parent="."]
+position = Vector2( 84.2068, 299.377 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall76" type="Sprite" parent="."]
+position = Vector2( 139.825, 299.251 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall77" type="Sprite" parent="."]
+position = Vector2( 203.825, 299.251 )
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall78" type="Sprite" parent="."]
+position = Vector2( 37.825, 300.251 )
+scale = Vector2( 0.45, 0.389535 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall21" type="Sprite" parent="."]
+position = Vector2( 227, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall22" type="Sprite" parent="."]
+position = Vector2( 189, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall23" type="Sprite" parent="."]
+position = Vector2( 150, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall29" type="Sprite" parent="."]
+position = Vector2( 191, 203 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall13" type="Sprite" parent="."]
+position = Vector2( 504, 128 )
+rotation = 1.5708
+scale = Vector2( 0.45, 0.317274 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall40" type="Sprite" parent="."]
+position = Vector2( 504, 87 )
+rotation = 1.5708
+scale = Vector2( 0.45, 0.317274 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall41" type="Sprite" parent="."]
+position = Vector2( 504, 81 )
+rotation = 1.5708
+scale = Vector2( 0.45, 0.317274 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall18" type="Sprite" parent="."]
+position = Vector2( 447, 80 )
+scale = Vector2( 0.608247, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall24" type="Sprite" parent="."]
+position = Vector2( 104, 56 )
+scale = Vector2( 0.608247, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall35" type="Sprite" parent="."]
+position = Vector2( 54, 37 )
+scale = Vector2( 0.608247, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall17" type="Sprite" parent="."]
+position = Vector2( 371, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall2Flipped" type="Sprite" parent="."]
+position = Vector2( 476, 224.75 )
+scale = Vector2( 0.45, 0.556122 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped10" type="Sprite" parent="."]
+position = Vector2( 136, 221.875 )
+scale = Vector2( 0.45, 0.533163 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped9" type="Sprite" parent="."]
+position = Vector2( 80, 223 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall16" type="Sprite" parent="."]
+position = Vector2( 533, 199 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall1" type="Sprite" parent="."]
+position = Vector2( 231, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall2Flipped4" type="Sprite" parent="."]
+position = Vector2( 473.163, 126 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped5" type="Sprite" parent="."]
+position = Vector2( 419.337, 96 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped7" type="Sprite" parent="."]
+position = Vector2( 79, 131 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped11" type="Sprite" parent="."]
+position = Vector2( 79, 84 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped6" type="Sprite" parent="."]
+position = Vector2( 473.163, 98 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped8" type="Sprite" parent="."]
+position = Vector2( 128, 132 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped13" type="Sprite" parent="."]
+position = Vector2( 128, 82 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall19" type="Sprite" parent="."]
+position = Vector2( 452, 253 )
+scale = Vector2( 0.659794, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall25" type="Sprite" parent="."]
+position = Vector2( 110.5, 241 )
+scale = Vector2( 0.628866, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall26" type="Sprite" parent="."]
+position = Vector2( 57, 207 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall27" type="Sprite" parent="."]
+position = Vector2( 50, 207 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall12" type="Sprite" parent="."]
+position = Vector2( 404, 203 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall2Flipped2" type="Sprite" parent="."]
+position = Vector2( 418, 227.5 )
+scale = Vector2( 0.45, 0.602041 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall34" type="Sprite" parent="."]
+position = Vector2( 242, 231 )
+rotation = 1.5708
+scale = Vector2( 0.445621, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall43" type="Sprite" parent="."]
+position = Vector2( 488, 61 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall46" type="Sprite" parent="."]
+position = Vector2( 569, 59 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall47" type="Sprite" parent="."]
+position = Vector2( 609, 59 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall48" type="Sprite" parent="."]
+position = Vector2( 598, 59 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall44" type="Sprite" parent="."]
+position = Vector2( 451, 61 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall64" type="Sprite" parent="."]
+position = Vector2( 408, 61 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall45" type="Sprite" parent="."]
+position = Vector2( 451, 7 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall63" type="Sprite" parent="."]
+position = Vector2( 408, 7 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall50" type="Sprite" parent="."]
+position = Vector2( 492, 7 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall51" type="Sprite" parent="."]
+position = Vector2( 533, 7 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall52" type="Sprite" parent="."]
+position = Vector2( 574, 7 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall53" type="Sprite" parent="."]
+position = Vector2( 610, 7 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall55" type="Sprite" parent="."]
+position = Vector2( 602, 8 )
+scale = Vector2( 0.45, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall2Flipped15" type="Sprite" parent="."]
+position = Vector2( 388, 33 )
+scale = Vector2( 0.387791, 0.637755 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall49" type="Sprite" parent="."]
+position = Vector2( 621, 32 )
+rotation = 1.5708
+scale = Vector2( 0.478639, 0.459302 )
+texture = ExtResource( 2 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Goblin" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 411, 75 )
+scale = Vector2( 0.8, 0.8 )
+collision_layer = 1
+collision_mask = 16
+
+[node name="Goblin2" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 71, 97 )
+scale = Vector2( 0.8, 0.8 )
+collision_layer = 3
+collision_mask = 16
+
+[node name="Goblin6" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 152, 208 )
+scale = Vector2( 0.6, 0.5 )
+collision_layer = 3
+collision_mask = 16
+
+[node name="Goblin3" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 152, 152 )
+scale = Vector2( 0.7, 0.5 )
+updown = false
+
+[node name="Goblin5" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 480, 200 )
+scale = Vector2( 0.7, 0.75 )
+updown = false
+
+[node name="Goblin4" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 430, 7 )
+scale = Vector2( 0.7, 0.6 )
+updown = false
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 268, 240 )
+game_over_scene = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="YSort/StaticBody2D"]
+position = Vector2( -6606.45, -12.6 )
+scale = Vector2( 18.3125, 0.34375 )
+polygon = PoolVector2Array( 394.4, 874.473, 395.274, 851.2, 395.711, 13.3818, 360.762, 13.3818, 360.762, 1107.2, 394.4, 874.473, 362.509, 897.745, 362.509, 665.018, 364.694, 665.018, 364.694, 758.109, 365.567, 758.109, 366.441, 758.109, 366.878, 758.109, 367.315, 758.109, 368.625, 758.109, 368.625, 665.018, 373.868, 665.018, 373.868, 711.564, 373.868, 734.836, 373.868, 781.382, 374.304, 781.382, 374.304, 758.109, 374.304, 595.2, 367.752, 595.2, 367.752, 711.564, 365.567, 734.836, 365.567, 618.473, 362.509, 618.473, 362.509, 153.018, 364.694, 153.018, 364.694, 478.836, 365.567, 478.836, 365.567, 199.564, 367.752, 199.564, 367.752, 502.109, 383.915, 502.109, 383.915, 292.655, 386.537, 292.655, 386.537, 502.109, 388.721, 502.109, 388.721, 199.564, 382.168, 199.564, 382.168, 83.2, 394.4, 83.2, 394.4, 199.564, 390.905, 199.564, 390.905, 571.927, 390.905, 595.2, 386.537, 595.2, 386.537, 758.109, 383.915, 758.109, 383.915, 595.2, 376.489, 595.2, 376.489, 711.564, 376.489, 711.564, 377.362, 711.564, 377.362, 641.745, 380.42, 641.745, 381.731, 641.745, 382.168, 641.745, 383.042, 641.745, 383.042, 781.382, 383.915, 781.382, 385.226, 781.382, 386.973, 781.382, 386.973, 641.745, 391.342, 641.745, 391.342, 222.836, 394.837, 222.836, 394.4, 827.927 )
+
+[node name="PixelWall2Flipped12" type="Sprite" parent="."]
+position = Vector2( 79, 59 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall32" type="Sprite" parent="."]
+position = Vector2( 26, 64 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 139.0
+margin_top = 64.0
+margin_right = 411.0
+margin_bottom = 144.0
+text = "You sense your staff nearby... you only need to collect a bit more mana before you can use it. Collect all three mana and then grab your staff to cast a spell and escape!"
+
+[node name="Mana" parent="." instance=ExtResource( 6 )]
+position = Vector2( 570, 33 )
+
+[node name="Mana3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 591, 101 )
+
+[node name="Mana2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 65, 273 )
+
+[node name="Staff" parent="." instance=ExtResource( 7 )]
+position = Vector2( 51, 72 )
+scale = Vector2( 1.2, 1.4 )
+next_scene = ExtResource( 10 )
+
+[connection signal="tree_exited" from="Mana" to="Staff" method="_on_Mana_tree_exited"]
+[connection signal="tree_exited" from="Mana3" to="Staff" method="_on_Mana3_tree_exited"]
+[connection signal="tree_exited" from="Mana2" to="Staff" method="_on_Mana2_tree_exited"]

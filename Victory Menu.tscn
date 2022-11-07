@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Images/mathieu-chauderlot-room-0021-layer-7.jpg" type="Texture" id=2]
+[ext_resource path="res://Quit Button.gd" type="Script" id=4]
+
+[node name="Game Over" type="Node2D"]
+
+[node name="Mathieu-chauderlot-room-0021-layer-7" type="Sprite" parent="."]
+position = Vector2( 320, 192 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="Start Button" type="Button" parent="."]
+margin_left = 248.0
+margin_top = 238.0
+margin_right = 379.0
+margin_bottom = 270.0
+text = "Exit"
+script = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 129.0
+margin_top = 73.0
+margin_right = 519.0
+margin_bottom = 223.0
+rect_rotation = 0.0719735
+text = "With one wave of your staff and a powerful spell, you teleport out of the goblin's grasp. You've saved yourself and your magical staff. 
+
+Who knows what kind of power they would have had if you didn't make it out of there...
+
+You brought yourself to King Arthur's hall to warn him of the growing goblin strength. With your magic and his army, you'll make the goblins regret ever sticking you in their dungeon..."
+
+[connection signal="pressed" from="Start Button" to="Start Button" method="_on_Quit_Button_pressed"]

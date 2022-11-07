@@ -1,0 +1,407 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Images/pixel_wall_2.png" type="Texture" id=2]
+[ext_resource path="res://Images/donegwall.JPG" type="Texture" id=3]
+[ext_resource path="res://Images/pixel_wall_2_flipped.png" type="Texture" id=4]
+[ext_resource path="res://Images/pixel_wall_1.png" type="Texture" id=5]
+[ext_resource path="res://Mana.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Exit_door.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemy/Goblin.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Game Over.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Level3.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Exit_door_2.tscn" type="PackedScene" id=11]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Donegwall" type="Sprite" parent="."]
+position = Vector2( 227, 122 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+offset = Vector2( 930, 1100 )
+region_enabled = true
+region_rect = Rect2( -4784, -4037, 8099, 6806 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = 248.0
+margin_right = 200.0
+margin_bottom = 664.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 144.0
+margin_top = 208.0
+margin_right = 344.0
+margin_bottom = 624.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+margin_left = 216.0
+margin_top = 200.0
+margin_right = 416.0
+margin_bottom = 616.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+margin_left = 352.0
+margin_top = 256.0
+margin_right = 552.0
+margin_bottom = 672.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+margin_left = 480.0
+margin_top = 200.0
+margin_right = 680.0
+margin_bottom = 616.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+margin_left = 560.0
+margin_top = -48.0
+margin_right = 760.0
+margin_bottom = 368.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+margin_left = 480.0
+margin_top = -256.0
+margin_right = 680.0
+margin_bottom = 160.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect8" type="ColorRect" parent="."]
+margin_left = 360.0
+margin_top = -336.0
+margin_right = 560.0
+margin_bottom = 80.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect9" type="ColorRect" parent="."]
+margin_left = 130.0
+margin_top = -272.0
+margin_right = 416.0
+margin_bottom = 144.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect10" type="ColorRect" parent="."]
+margin_left = 83.0
+margin_top = -305.0
+margin_right = 369.0
+margin_bottom = 111.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect11" type="ColorRect" parent="."]
+margin_left = -101.0
+margin_top = -372.0
+margin_right = 185.0
+margin_bottom = 44.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect12" type="ColorRect" parent="."]
+margin_left = -264.0
+margin_top = -114.0
+margin_right = 22.0
+margin_bottom = 302.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect13" type="ColorRect" parent="."]
+margin_left = -208.0
+margin_top = 214.0
+margin_right = 78.0
+margin_bottom = 630.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="PixelWall20" type="Sprite" parent="."]
+position = Vector2( 151, 203 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall2Flipped3" type="Sprite" parent="."]
+position = Vector2( 419.337, 126 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2" type="Sprite" parent="."]
+position = Vector2( 312, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall9" type="Sprite" parent="."]
+position = Vector2( 351, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall10" type="Sprite" parent="."]
+position = Vector2( 387, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall4" type="Sprite" parent="."]
+position = Vector2( 310, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall15" type="Sprite" parent="."]
+position = Vector2( 335, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall6" type="Sprite" parent="."]
+position = Vector2( 360, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall7" type="Sprite" parent="."]
+position = Vector2( 404, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall8" type="Sprite" parent="."]
+position = Vector2( 489, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall14" type="Sprite" parent="."]
+position = Vector2( 555, 177 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall28" type="Sprite" parent="."]
+position = Vector2( 555, 177 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall30" type="Sprite" parent="."]
+position = Vector2( 24, 183.125 )
+rotation = 1.5708
+scale = Vector2( 0.711484, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall31" type="Sprite" parent="."]
+position = Vector2( 25, 120 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall11" type="Sprite" parent="."]
+position = Vector2( 489, 200 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall5" type="Sprite" parent="."]
+position = Vector2( 269, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall21" type="Sprite" parent="."]
+position = Vector2( 227, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall22" type="Sprite" parent="."]
+position = Vector2( 189, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall23" type="Sprite" parent="."]
+position = Vector2( 150, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall3" type="Sprite" parent="."]
+position = Vector2( 274, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall29" type="Sprite" parent="."]
+position = Vector2( 191, 203 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall13" type="Sprite" parent="."]
+position = Vector2( 534, 152 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall18" type="Sprite" parent="."]
+position = Vector2( 447, 80 )
+scale = Vector2( 0.608247, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall24" type="Sprite" parent="."]
+position = Vector2( 104, 111 )
+scale = Vector2( 0.608247, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall17" type="Sprite" parent="."]
+position = Vector2( 371, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall2Flipped" type="Sprite" parent="."]
+position = Vector2( 476, 224.75 )
+scale = Vector2( 0.45, 0.556122 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped10" type="Sprite" parent="."]
+position = Vector2( 136, 221.875 )
+scale = Vector2( 0.45, 0.533163 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped9" type="Sprite" parent="."]
+position = Vector2( 80, 223 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall16" type="Sprite" parent="."]
+position = Vector2( 533, 199 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall1" type="Sprite" parent="."]
+position = Vector2( 231, 202 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 5 )
+
+[node name="PixelWall2Flipped4" type="Sprite" parent="."]
+position = Vector2( 473.163, 126 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped5" type="Sprite" parent="."]
+position = Vector2( 419.337, 96 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped7" type="Sprite" parent="."]
+position = Vector2( 79, 131 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped11" type="Sprite" parent="."]
+position = Vector2( 79, 84 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped6" type="Sprite" parent="."]
+position = Vector2( 473.163, 98 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall2Flipped8" type="Sprite" parent="."]
+position = Vector2( 128, 132 )
+scale = Vector2( 0.318022, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="PixelWall19" type="Sprite" parent="."]
+position = Vector2( 452, 253 )
+scale = Vector2( 0.659794, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall25" type="Sprite" parent="."]
+position = Vector2( 110.5, 241 )
+scale = Vector2( 0.628866, 0.366279 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall26" type="Sprite" parent="."]
+position = Vector2( 57, 207 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall27" type="Sprite" parent="."]
+position = Vector2( 50, 207 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall12" type="Sprite" parent="."]
+position = Vector2( 404, 203 )
+scale = Vector2( 0.45, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="PixelWall2Flipped2" type="Sprite" parent="."]
+position = Vector2( 418, 231.5 )
+scale = Vector2( 0.45, 0.602041 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Goblin" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 409, 63 )
+scale = Vector2( 0.8, 0.8 )
+collision_layer = 1
+collision_mask = 16
+
+[node name="Goblin2" parent="YSort" instance=ExtResource( 8 )]
+position = Vector2( 71, 97 )
+scale = Vector2( 0.8, 0.8 )
+collision_layer = 3
+collision_mask = 16
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 320, 168 )
+game_over_scene = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="YSort"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="YSort/StaticBody2D"]
+polygon = PoolVector2Array( 19, 33, 32, 33, 32, 200, 88, 200, 88, 240, 128, 240, 128, 192, 424, 192, 424, 248, 472, 248, 472, 192, 552, 192, 552, 160, 552, 152, 472, 152, 472, 80, 424, 80, 424, 160, 128, 160, 128, 112, 88, 112, 88, 152, 80, 152, 72, 152, 72, 32, 88, 32, 88, 104, 136, 104, 408, 104, 408, 32, 504, 32, 512, 120, 576, 128, 584, 280, 192, 336, 8, 248 )
+
+[node name="PixelWall2Flipped12" type="Sprite" parent="."]
+position = Vector2( 79, 59 )
+scale = Vector2( 0.387791, 0.5 )
+texture = ExtResource( 4 )
+flip_v = true
+
+[node name="Exitno_door" parent="." instance=ExtResource( 7 )]
+position = Vector2( -102, 51 )
+manaleft = -3
+
+[node name="PixelWall32" type="Sprite" parent="."]
+position = Vector2( 26, 64 )
+rotation = 1.5708
+scale = Vector2( 0.667665, 0.42445 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 149.0
+margin_top = 59.0
+margin_right = 405.0
+margin_bottom = 130.0
+text = "A goblin guard noticed you escaped from your cell! The goblins are on high alert and have started patroling the corridors... "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 58.0
+margin_top = 267.0
+margin_right = 545.0
+margin_bottom = 370.0
+text = "Collect the mana and get to the door to move on to the next room. Hopefully you'll be one step closer to escape... 
+
+Avoid running into the goblins or you're escape will come to a bitter end! The corridors are dark, so they won't catch you unless you bump right into them"
+
+[node name="Mana" parent="." instance=ExtResource( 6 )]
+position = Vector2( 530, 175 )
+
+[node name="Exit_door" parent="." instance=ExtResource( 11 )]
+position = Vector2( 52, 44 )
+next_scene = ExtResource( 10 )
+
+[connection signal="tree_exited" from="Mana" to="Exit_door" method="_on_Mana_tree_exited"]
