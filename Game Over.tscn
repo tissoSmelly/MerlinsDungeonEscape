@@ -30,6 +30,6 @@ margin_bottom = 172.0
 rect_rotation = 0.0719735
 text = "The goblins caught you trying to escape. 
 
-You were unable to recover your staff and now it is in the hands of the goblins forever... With such powerful magic in their grapse the kingdoms of the continent don't stand a chance."
+You were unable to recover your staff and now it is in the hands of the goblins forever... With such powerful magic in their graps the kingdoms of the continent don't stand a chance."
 
 [connection signal="pressed" from="Quit Button" to="Quit Button" method="_on_Quit_Button_pressed"]

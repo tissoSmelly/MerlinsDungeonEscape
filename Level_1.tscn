@@ -148,7 +148,7 @@ margin_right = 184.0
 margin_bottom = 352.0
 text = "Hmm... you won't be able to open that door without some magic.
 
-Luckily there seem to be some some remenance of mana in this room."
+Luckily there seem to be remenance of mana in this room."
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 margin_left = 185.0

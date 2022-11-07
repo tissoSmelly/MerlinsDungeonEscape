@@ -395,7 +395,7 @@ margin_right = 545.0
 margin_bottom = 370.0
 text = "Collect the mana and get to the door to move on to the next room. Hopefully you'll be one step closer to escape... 
 
-Avoid running into the goblins or you're escape will come to a bitter end! The corridors are dark, so they won't catch you unless you bump right into them"
+Avoid running into the goblins or your escape will come to a bitter end! The corridors are dark, so they won't catch you unless you bump right into them"
 
 [node name="Mana" parent="." instance=ExtResource( 6 )]
 position = Vector2( 530, 175 )
